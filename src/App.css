@@ -1,38 +1,92 @@
-.App {
+.h1-title {
+  font-size: 24px; 
+  font-weight: bold; 
+  color: #333; 
+  text-align: center; 
+  margin: 20px 0; 
+}
+
+
+.smile-card {
+  display: flex;
+  align-items: center;
+  width: 500px; 
+  height: 50px;
+  background-color: aqua;
+  border-radius: 8px;
+  margin: 5px;
+  padding: 5px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.emoji {
+  font-size: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.votes {
+  margin-top: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.smile-list-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 20px; 
 }
 
-.App-link {
-  color: #61dafb;
+.vote-btn {
+  background-color: #007bff; 
+  color: #fff; 
+  border: none; 
+  padding: 5px 20px; 
+  border-radius: 5px; 
+  cursor: pointer; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.vote-btn:hover {
+  background-color: #0056b3;
+}
+
+
+.winner-btn {
+  margin: 0 calc(50% - 40px);
+  background-color: #470dce; 
+  color: #fff; 
+  border: none; 
+  padding: 5px 20px; 
+  border-radius: 5px; 
+  cursor: pointer;
+}
+
+.winner-btn:hover {
+  background-color: #22044a;
+}
+
+.winner h2 {
+  font-size: 18px; 
+  font-weight: bold; 
+  color: #333; 
+  text-align: center; 
+  margin: 20px 0; 
+}
+
+@media (max-width: 768px) {
+  .h1-title {
+    font-size: 20px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 768px) {
+  .smile-card {
+    width: 100%; 
+  }
+  
+  .emoji {
+    font-size: 20px;
+  }
+  
+  .votes {
+    margin-top: 5px;
   }
 }
